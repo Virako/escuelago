@@ -1,1 +1,1 @@
-python escuelago/manage.py runserver
+web: python escuelago/manage.py runserver
