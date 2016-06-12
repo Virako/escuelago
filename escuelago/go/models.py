@@ -58,7 +58,7 @@ AVAILABILITY = (
 
 
 class Player(models.Model):
-    player = models.ForeignKey(User, unique=True)
+    player = models.OneToOneField(User)
     current_rank = models.CharField(max_length=3, choices=RANKS, default='20k')
     availability_review = models.CharField(max_length=10, choices=AVAILABILITY, default='weekly')
 
